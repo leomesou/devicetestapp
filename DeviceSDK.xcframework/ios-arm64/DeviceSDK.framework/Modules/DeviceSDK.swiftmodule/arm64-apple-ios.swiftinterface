@@ -1,0 +1,28 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -module-name DeviceSDK -package-name devicesdk
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class DeviceManager {
+  public static func getDeviceID() async throws -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ErrorHandler {
+  public enum DeviceSDKError : Swift.Error {
+    case deviceIDGenerationFailed
+    case persistenceFailed
+    case unknownError
+    public static func == (a: DeviceSDK.ErrorHandler.DeviceSDKError, b: DeviceSDK.ErrorHandler.DeviceSDKError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func handleError(_ error: DeviceSDK.ErrorHandler.DeviceSDKError) -> Swift.String
+  @objc deinit
+}
+extension DeviceSDK.ErrorHandler.DeviceSDKError : Swift.Equatable {}
+extension DeviceSDK.ErrorHandler.DeviceSDKError : Swift.Hashable {}

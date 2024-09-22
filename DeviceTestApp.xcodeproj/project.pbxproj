@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C0AC5B92C9F11CA0014BCBB /* DeviceSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */; };
+		9C6118852CA054B6001CF4C4 /* DeviceSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */; };
+		9C6118862CA054B6001CF4C4 /* DeviceSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */; };
+		9C6118872CA05526001CF4C4 /* DeviceSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */; };
+		9C6118882CA05526001CF4C4 /* DeviceSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +30,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9C6118892CA05526001CF4C4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C6118882CA05526001CF4C4 /* DeviceSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9C0AC5882C9F10E70014BCBB /* DeviceTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0AC5982C9F10E90014BCBB /* DeviceTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0AC5A22C9F10E90014BCBB /* DeviceTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DeviceSDK.xcframework; sourceTree = "<group>"; };
 		9C804BF82C9F5616002DB40B /* DeviceTestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceTestApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0AC5B92C9F11CA0014BCBB /* DeviceSDK in Frameworks */,
+				9C6118872CA05526001CF4C4 /* DeviceSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6118862CA054B6001CF4C4 /* DeviceSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6118852CA054B6001CF4C4 /* DeviceSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +106,7 @@
 				9C0AC59B2C9F10E90014BCBB /* DeviceTestAppTests */,
 				9C0AC5A52C9F10E90014BCBB /* DeviceTestAppUITests */,
 				9C0AC5892C9F10E70014BCBB /* Products */,
+				9C6118832CA054B6001CF4C4 /* DeviceSDK.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +130,7 @@
 				9C0AC5842C9F10E70014BCBB /* Sources */,
 				9C0AC5852C9F10E70014BCBB /* Frameworks */,
 				9C0AC5862C9F10E70014BCBB /* Resources */,
+				9C6118892CA05526001CF4C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,7 +141,6 @@
 			);
 			name = DeviceTestApp;
 			packageProductDependencies = (
-				9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */,
 			);
 			productName = DeviceTestApp;
 			productReference = 9C0AC5882C9F10E70014BCBB /* DeviceTestApp.app */;
@@ -204,7 +225,6 @@
 			mainGroup = 9C0AC57F2C9F10E70014BCBB;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				9C0AC5B72C9F11CA0014BCBB /* XCLocalSwiftPackageReference "../DeviceSDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9C0AC5892C9F10E70014BCBB /* Products */;
@@ -573,20 +593,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		9C0AC5B72C9F11CA0014BCBB /* XCLocalSwiftPackageReference "../DeviceSDK" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../DeviceSDK;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DeviceSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C0AC5802C9F10E70014BCBB /* Project object */;
 }

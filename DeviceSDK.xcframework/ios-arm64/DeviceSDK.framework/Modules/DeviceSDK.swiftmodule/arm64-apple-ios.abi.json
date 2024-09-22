@@ -1,0 +1,419 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DeviceSDK",
+    "printedName": "DeviceSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeviceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeviceManager",
+        "printedName": "DeviceManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getDeviceID",
+            "printedName": "getDeviceID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DeviceSDK0A7ManagerC03getA2IDSSyYaKFZ",
+            "mangledName": "$s9DeviceSDK0A7ManagerC03getA2IDSSyYaKFZ",
+            "moduleName": "DeviceSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9DeviceSDK0A7ManagerC",
+        "mangledName": "$s9DeviceSDK0A7ManagerC",
+        "moduleName": "DeviceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DeviceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErrorHandler",
+        "printedName": "ErrorHandler",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "DeviceSDKError",
+            "printedName": "DeviceSDKError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "deviceIDGenerationFailed",
+                "printedName": "deviceIDGenerationFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DeviceSDK.ErrorHandler.DeviceSDKError.Type) -> DeviceSDK.ErrorHandler.DeviceSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceSDKError",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                        "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeviceSDKError",
+                            "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                            "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO24deviceIDGenerationFailedyA2EmF",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO24deviceIDGenerationFailedyA2EmF",
+                "moduleName": "DeviceSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "persistenceFailed",
+                "printedName": "persistenceFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DeviceSDK.ErrorHandler.DeviceSDKError.Type) -> DeviceSDK.ErrorHandler.DeviceSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceSDKError",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                        "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeviceSDKError",
+                            "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                            "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO17persistenceFailedyA2EmF",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO17persistenceFailedyA2EmF",
+                "moduleName": "DeviceSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "unknownError",
+                "printedName": "unknownError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DeviceSDK.ErrorHandler.DeviceSDKError.Type) -> DeviceSDK.ErrorHandler.DeviceSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceSDKError",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                        "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeviceSDKError",
+                            "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                            "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO07unknownC0yA2EmF",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO07unknownC0yA2EmF",
+                "moduleName": "DeviceSDK"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceSDKError",
+                    "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                    "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceSDKError",
+                    "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                    "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "DeviceSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO9hashValueSivp",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO9hashValueSivp",
+                "moduleName": "DeviceSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO9hashValueSivg",
+                    "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO9hashValueSivg",
+                    "moduleName": "DeviceSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "DeviceSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO",
+            "mangledName": "$s9DeviceSDK12ErrorHandlerC0A8SDKErrorO",
+            "moduleName": "DeviceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "handleError",
+            "printedName": "handleError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceSDKError",
+                "printedName": "DeviceSDK.ErrorHandler.DeviceSDKError",
+                "usr": "s:9DeviceSDK12ErrorHandlerC0A8SDKErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DeviceSDK12ErrorHandlerC06handleC0ySSAC0A8SDKErrorOFZ",
+            "mangledName": "$s9DeviceSDK12ErrorHandlerC06handleC0ySSAC0A8SDKErrorOFZ",
+            "moduleName": "DeviceSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9DeviceSDK12ErrorHandlerC",
+        "mangledName": "$s9DeviceSDK12ErrorHandlerC",
+        "moduleName": "DeviceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/leandro\/Desktop\/DeviceSDK\/Sources\/DeviceSDK\/DeviceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 27,
+      "value": "\"com.leandro.seon.deviceid\""
+    }
+  ]
+}
