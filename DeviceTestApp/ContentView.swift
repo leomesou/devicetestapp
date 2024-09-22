@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	@StateObject private var viewModel = ContentViewModel()
+
+	var body: some View {
+		VStack(spacing: 8) {
+			HStack(spacing: 8) {
+				Image(systemName: "phone")
+					.imageScale(.large)
+					.foregroundStyle(.tint)
+					.accessibilityIdentifier("phoneIcon")
+
+				Text("Device ID:")
+					.accessibilityIdentifier("deviceIDLabel")
+			}
+			Text(viewModel.deviceID)
+				.accessibilityIdentifier("deviceIDValue")
+		}
+		.padding(8)
+		.alert(isPresented: $viewModel.showAlert) {
+			Alert(
+				title: Text("Error"),
+				message: Text(viewModel.alertMessage),
+				dismissButton: .default(Text("OK"))
+			)
+		}
+	}
 }
 
 #Preview {
-    ContentView()
+	ContentView()
 }

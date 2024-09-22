@@ -9,25 +9,27 @@ import XCTest
 
 final class DeviceTestAppUITestsLaunchTests: XCTestCase {
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
+	override class var runsForEachTargetApplicationUIConfiguration: Bool {
+		true
+	}
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
+	override func setUpWithError() throws {
+		continueAfterFailure = false
+	}
 
-    @MainActor
-    func testLaunch() throws {
-        let app = XCUIApplication()
-        app.launch()
+	@MainActor
+	func testLaunchAndVerifyUI() throws {
+		let app = XCUIApplication()
+		app.launch()
 
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
+		// Example: Wait for an element to appear, such as a "Device ID" label
+		let deviceIDLabel = app.staticTexts["Device ID:"]
+		XCTAssertTrue(deviceIDLabel.exists, "The Device ID label should be visible on launch")
 
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
-    }
+		// Example: Capture a screenshot after interacting with the UI
+		let attachment = XCTAttachment(screenshot: app.screenshot())
+		attachment.name = "Launch Screen with Device ID"
+		attachment.lifetime = .keepAlways
+		add(attachment)
+	}
 }

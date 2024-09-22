@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9C0AC5B92C9F11CA0014BCBB /* DeviceSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9C0AC5992C9F10E90014BCBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		9C0AC5882C9F10E70014BCBB /* DeviceTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0AC5982C9F10E90014BCBB /* DeviceTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0AC5A22C9F10E90014BCBB /* DeviceTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C804BF82C9F5616002DB40B /* DeviceTestApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceTestApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0AC5B92C9F11CA0014BCBB /* DeviceSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 		9C0AC57F2C9F10E70014BCBB = {
 			isa = PBXGroup;
 			children = (
+				9C804BF82C9F5616002DB40B /* DeviceTestApp.xctestplan */,
 				9C0AC58A2C9F10E70014BCBB /* DeviceTestApp */,
 				9C0AC59B2C9F10E90014BCBB /* DeviceTestAppTests */,
 				9C0AC5A52C9F10E90014BCBB /* DeviceTestAppUITests */,
@@ -112,6 +119,7 @@
 			);
 			name = DeviceTestApp;
 			packageProductDependencies = (
+				9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */,
 			);
 			productName = DeviceTestApp;
 			productReference = 9C0AC5882C9F10E70014BCBB /* DeviceTestApp.app */;
@@ -195,6 +203,9 @@
 			);
 			mainGroup = 9C0AC57F2C9F10E70014BCBB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9C0AC5B72C9F11CA0014BCBB /* XCLocalSwiftPackageReference "../DeviceSDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9C0AC5892C9F10E70014BCBB /* Products */;
 			projectDirPath = "";
@@ -321,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -378,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -404,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +445,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +467,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UD89N84N2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandro.seon.DeviceTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UD89N84N2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandro.seon.DeviceTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +504,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UD89N84N2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandro.seon.DeviceTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3UD89N84N2;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandro.seon.DeviceTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,6 +573,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9C0AC5B72C9F11CA0014BCBB /* XCLocalSwiftPackageReference "../DeviceSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../DeviceSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C0AC5B82C9F11CA0014BCBB /* DeviceSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DeviceSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C0AC5802C9F10E70014BCBB /* Project object */;
 }
